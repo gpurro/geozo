@@ -11,6 +11,7 @@ $databases['default']['default'] = array (
   'driver' => 'mysql',
 );
 
-$settings['trusted_host_patterns'] = array(
+$settings['trusted_host_patterns'] = [
   '^geozo\.site$',
-);
+  '^.+\.geozo\.site$',
+];
