@@ -266,7 +266,7 @@ $databases = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'ByiTc3tN-821fmMSRO3SoMehskKU_jYApv509rcQQmIkAbPDwg9yS7k0mmyXtrNXanmPfqgHFg';
+$settings['hash_salt'] = 'MrpuyjDj9e1AShvFUR4NNO-RDH-Ht2OEWKcWTY9yDmB8aKGI7QWbQv4C52JNzfIB6Aj0Yjpcvw';
 
 /**
  * Deployment identifier.
@@ -482,8 +482,8 @@ if ($settings['hash_salt']) {
  *
  * Value should be in PHP Octal Notation, with leading zero.
  */
-# $settings['file_chmod_directory'] = 0775;
-# $settings['file_chmod_file'] = 0664;
+$settings['file_chmod_directory'] = 0777;
+$settings['file_chmod_file'] = 0666;
 
 /**
  * Public file base URL:
@@ -706,6 +706,10 @@ $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
  * will allow the site to run off of all variants of example.com and
  * example.org, with all subdomains included.
  */
+$settings['trusted_host_patterns'] = [
+  '^geozo\.site$',
+  '^.+\.geozo\.site$',
+];
 
 /**
  * The default list of directories that will be ignored by Drupal's file API.
@@ -756,6 +760,16 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }
 
-$config_directories['sync'] = '../config/sync';
-$settings['maintenance_theme'] = 'seven';
-
+/*
+$databases['default']['default'] = array (
+  'database' => 'u193237823_Lc1Kw',
+  'username' => 'u193237823_ewut5',
+  'password' => 'UeBat5696q',
+  'prefix' => 'lmz9_',
+  'host' => '127.0.0.1',
+  'port' => '',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+$settings['config_sync_directory'] = 'sites/default/files/config_AoSK_gguhd91SBNfxQGXe1nIx23QXmmNYfnpz-RAt_O7Q7CeL3qkZUC7PmCAX9q5ZuqHDz9niw/sync';
+*/
