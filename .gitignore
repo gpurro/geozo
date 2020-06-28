@@ -21,3 +21,6 @@
 
 # Ignore db backups
 *.gz
+/INSTALL.txt
+/README.txt
+/example.gitignore
