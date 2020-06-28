@@ -759,15 +759,3 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 $config_directories['sync'] = '../config/sync';
 $settings['maintenance_theme'] = 'seven';
 
-if (isset($GLOBALS['request']) and '/web/index.php' === $GLOBALS['request']->server->get('SCRIPT_NAME')) {
-  $GLOBALS['request']->server->set('SCRIPT_NAME', '/index.php');
-}
-
-/*
-$databases['default']['default'] = array (
-  'database' => 'sites/default/files/.sqlite',
-  'prefix' => '',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\sqlite',
-  'driver' => 'sqlite',
-);
-*/
