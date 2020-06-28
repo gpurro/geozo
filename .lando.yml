@@ -1,0 +1,4 @@
+name: geozo
+recipe: drupal8
+config:
+  webroot: .

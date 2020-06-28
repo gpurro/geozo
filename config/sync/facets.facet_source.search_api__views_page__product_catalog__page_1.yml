@@ -1,0 +1,14 @@
+uuid: 50f04b58-0e89-4ded-8e20-290b9b7bf69b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 0MX_TdyFRAWKimdxVECoWxDSjCs4cB31vMUL-WvY624
+id: search_api__views_page__product_catalog__page_1
+name: 'search_api:views_page__product_catalog__page_1'
+filter_key: ''
+url_processor: facets_pretty_paths
+breadcrumb:
+  active: false
+  before: true
+  group: false

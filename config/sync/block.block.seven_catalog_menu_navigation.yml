@@ -1,0 +1,25 @@
+uuid: 6bbad0fa-1d8f-451a-8f32-95241ada4ea3
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.catalog
+  module:
+    - system
+  theme:
+    - seven
+id: seven_catalog_menu_navigation
+theme: seven
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:catalog'
+settings:
+  id: catalog_menu_navigation
+  label: 'Catalog menu navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

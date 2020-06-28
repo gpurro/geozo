@@ -1,0 +1,22 @@
+uuid: 2ea64b40-6d85-453c-a5f2-4ddd60c7350c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - belgrade
+_core:
+  default_config_hash: XJkApTCnidVbNIe-SvLIX1pVPIiw5j_m0SWT-eYw39E
+id: belgrade_content
+theme: belgrade
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }
