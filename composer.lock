@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6b0799b99ca204f5905e99e23e9ec727",
+    "content-hash": "a41d422fd975d3e983c56d86b1280a52",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -8354,9 +8354,6 @@
                 "ext-zip": "Enabling the zip extension allows you to unzip archives",
                 "ext-zlib": "Allow gzip compression of HTTP requests"
             },
-            "bin": [
-                "bin/composer"
-            ],
             "type": "library",
             "extra": {
                 "branch-alias": {
